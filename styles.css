@@ -60,6 +60,7 @@ body {
   padding: 1.5em;
   border-radius: 1.25em;
   box-shadow: 0.5em 0.5em 0em 0em hsl(var(--black));
+  border: 1px solid hsl(var(--black));
 }
 
 .post-header img {
