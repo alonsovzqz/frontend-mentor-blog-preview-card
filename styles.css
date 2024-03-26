@@ -1,0 +1,135 @@
+@font-face {
+  font-family: "Figtree";
+  src: url("./assets/fonts/Figtree-VariableFont_wght.ttf") format("truetype");
+}
+
+:root {
+  --yellow: 47, 88%, 63%;
+  --white: 0, 0%, 100%;
+  --grey: 0, 0%, 50%;
+  --black: 0, 0%, 7%;
+
+  /* font families */
+  --ff-figtree: "Figtree", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+h1,
+h2 {
+  margin: 0;
+}
+
+/* makes images easier to work with */
+img,
+picture {
+  display: block;
+}
+
+body {
+  font-family: var(--ff-figtree);
+  padding-inline: 1.5em;
+  background-color: hsl(var(--yellow));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.flex {
+  display: flex;
+}
+
+.container {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-card {
+  flex-direction: column;
+  background-color: hsl(var(--white));
+  gap: 1.5em;
+  padding: 1.5em;
+  border-radius: 1.25em;
+  box-shadow: 0.5em 0.5em 0em 0em hsl(var(--black));
+}
+
+.post-header img {
+  border-radius: 0.625em;
+}
+
+.post-content {
+  flex-direction: column;
+  gap: 0.75em;
+}
+
+.post-title a {
+  color: hsl(var(--black));
+  text-decoration: none;
+}
+
+.post-title a:hover {
+  color: hsl(var(--yellow));
+}
+
+.post-content p {
+  color: hsl(var(--grey));
+  font-weight: 500;
+}
+
+.post-category {
+  width: fit-content;
+  padding: 0.25em 0.75em;
+  border-radius: 0.25em;
+  background-color: hsl(var(--yellow));
+  font-weight: 800;
+}
+
+.post-date {
+  font-size: 0.75em;
+  font-weight: 500;
+}
+
+.post-footer {
+    align-items: center;
+    gap: 0.75em;
+}
+
+.post-footer img {
+    width: 3em;
+    aspect-ratio: 1;
+}
+
+.post-footer p {
+    font-weight: 800;
+    font-size: 0.875em;
+}
+
+.attribution {
+  font-size: 11px;
+  position: fixed;
+  bottom: 0;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Desktop: 1440px */
+@media (min-width: 90em) {
+  .container {
+    max-width: 24em;
+  }
+
+  .post-card {
+    box-shadow: 1em 1em 0em 0em hsl(var(--black));
+  }
+}
