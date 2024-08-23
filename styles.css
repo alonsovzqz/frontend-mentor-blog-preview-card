@@ -75,6 +75,9 @@ body {
 .post-title a {
   color: hsl(var(--black));
   text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 800;
+  line-height: 150%;
 }
 
 .post-title a:hover {
@@ -132,5 +135,9 @@ body {
 
   .post-card {
     box-shadow: 1em 1em 0em 0em hsl(var(--black));
+  }
+
+  .post-title a {
+    font-size: 1.5rem;
   }
 }
